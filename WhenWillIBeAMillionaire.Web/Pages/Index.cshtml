@@ -17,8 +17,7 @@
         else
         {
             howMuchToSave = moneyLeft / (12 * (millionaireAge - age));
-            result = $"You're going to need to save around {Math.Round(howMuchToSave, 0)}/mo" +
-                    $" to become a millionaire by the age of {millionaireAge}";
+            result = $"${Math.Round(howMuchToSave, 0)}/mo";
         }
     }
 }
@@ -48,6 +47,12 @@
         <button class="form-control btn btn-primary" onclick="@calc">Run the Numbers!</button>
     </div>
     <div class="form-group">
-        <p align="center">@result</p>
+        <p align="center" style="font-size:xx-large; color:green">@result</p>
     </div>
+</div>
+
+<div align="center" class="form-group">
+    <p class="form-group">
+        Developed with 💗 by <a href="https://www.hassanhabib.com">Hassan Habib</a>
+    </p>
 </div>
